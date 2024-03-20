@@ -1,0 +1,89 @@
+---
+type head = {
+  id: string
+  title: string
+}
+
+type rows = {
+  id: string
+  nombre: string
+  videos?: number
+  duracion?: string
+  tamano?: string
+  ultima_modificacion?: string
+}
+
+interface Props {
+  headings: head[]
+  content: rows[]
+  icon: string
+  url?: string
+}
+
+const { headings, content, icon, url } = Astro.props
+---
+
+<table class='w-full text-left rtl:text-right text-black text-[0.75rem]'>
+  <thead>
+    <tr class='border-b-[1.5px] border-gray-100 [&>*:nth-child(2)]:text-left [&>*:nth-child(2)]:w-3/5'>
+      <th scope='col' class='px-1 py-2'>
+        <input
+        type='checkbox'
+        class='input-checkbox'
+        />
+      </th>
+      {headings.map((data) => <th scope='col' class='px-3 py-2 text-center'>{data.title}</th>)}
+    </tr>
+  </thead>
+  <tbody>
+    {content.map((data) =>
+      <tr class='bg-white border-b-[1.5px] border-gray-100 hover:bg-gray-100 cursor-pointer'>
+        <td class='px-1 py-3'>
+          <input
+            type='checkbox'
+            class='input-checkbox'
+          />
+        </td>
+        <td
+          class='px-3 py-2 font-medium text-gray-900'
+        >
+          { url !== undefined
+            ? (
+              <a
+                href={`${url}`}
+                class="flex items-center gap-3"
+              >
+                <i class={`ti ti-${icon} text-[1.35rem] text-primary`}></i>
+                {data.nombre}
+              </a>
+            )
+            : (
+              <div
+                class="flex items-center gap-3"
+              >
+                <i class={`ti ti-${icon} text-[1.35rem] text-primary`}></i>
+                {data.nombre}
+              </div>
+            )
+          }
+        </td>
+        {data.videos !== undefined &&
+          <td class='px-3 py-2 text-center'>
+            {data.videos}
+          </td>
+        }
+        <td class='px-3 py-2 text-center'>
+          {data.tamano}
+        </td>
+        {data.duracion !== undefined && 
+          <td class='px-3 py-2 text-center'>
+            {data.duracion}
+          </td>
+        }
+        <td class='px-3 py-2 text-center'>
+          {data.ultima_modificacion}
+        </td>
+      </tr>
+    )}
+  </tbody>
+</table>

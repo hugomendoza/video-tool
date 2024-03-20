@@ -8,7 +8,8 @@ export default {
         'secondary': 'var(--secondary-brand)',
         gray: {
           100: 'var(--light-gray)',
-          200: 'var(--gray)'
+          200: 'var(--gray)',
+          300: 'var(--gray-checkbox)'
         }
       }
     }

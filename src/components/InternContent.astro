@@ -1,0 +1,32 @@
+---
+import Table from './Table.astro'
+import content from '../data/content.json'
+---
+<main class='bg-white rounded-lg w-full py-7'>
+  <header class='flex flex-wrap justify-between items-center text-[0.7rem] px-6'>
+    <ul >
+      <li>
+        <a href="">
+          <i class="ti ti-layout-dashboard text-[1.25rem]"></i>
+          <p>Dashboard</p>
+        </a>
+      </li>
+      <li>
+        <p>/</p>
+      </li>
+      <li>
+        <p>Bemaster</p>
+      </li>
+    </ul>
+  </header>
+  <article class ='mt-8 px-12'>
+    <div class='relative overflow-x-auto'>
+      <Table
+        headings={content.head}
+        content={content.rows}
+        icon={content.icon}
+        url={content.url}
+      />
+    </div>
+  </article>
+</main>

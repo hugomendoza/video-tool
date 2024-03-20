@@ -1,0 +1,94 @@
+{
+  "icon": "folder",
+  "url": "content",
+  "head":[
+    {
+      "id": "1",
+      "title": "Nombre"
+    },
+    {
+      "id": "2",
+      "title": "Videos"
+    },
+    {
+      "id": "3",
+      "title": "Tamano"
+    },
+    {
+      "id": "4",
+      "title": "Última modificación"
+    }
+  ],
+  "rows": [
+    {
+      "id": "1",
+      "nombre": "Afiliado Master",
+      "videos": 8,
+      "tamano": "7.3 GB",
+      "ultima_modificacion": "30/may/2023"
+    },
+    {
+      "id": "2",
+      "nombre": "BeMaster",
+      "videos": 21,
+      "tamano": "1.4 GB",
+      "ultima_modificacion": "22/jun/2022"
+    },
+    {
+      "id": "3",
+      "nombre": "Comizzión",
+      "videos": 10,
+      "tamano": "284 MB",
+      "ultima_modificacion": "11/sep/2021"
+    },
+    {
+      "id": "4",
+      "nombre": "Creado de Contenido",
+      "videos": 2,
+      "tamano": "4.3 GB",
+      "ultima_modificacion": "21/jun/2023"
+    },
+    {
+      "id": "5",
+      "nombre": "Exportados Will",
+      "videos": 14,
+      "tamano": "500 MB",
+      "ultima_modificacion": "5/abr/2023"
+    },
+    {
+      "id": "6",
+      "nombre": "Afiliado Master",
+      "videos": 8,
+      "tamano": "7.3 GB",
+      "ultima_modificacion": "30/may/2023"
+    },
+    {
+      "id": "7",
+      "nombre": "BeMaster",
+      "videos": 21,
+      "tamano": "1.4 GB",
+      "ultima_modificacion": "22/jun/2022"
+    },
+    {
+      "id": "8",
+      "nombre": "Comizzión",
+      "videos": 10,
+      "tamano": "284 MB",
+      "ultima_modificacion": "11/sep/2021"
+    },
+    {
+      "id": "9",
+      "nombre": "Creado de Contenido",
+      "videos": 2,
+      "tamano": "4.3 GB",
+      "ultima_modificacion": "21/jun/2023"
+    },
+    {
+      "id": "10",
+      "nombre": "Exportados Will",
+      "videos": 14,
+      "tamano": "500 MB",
+      "ultima_modificacion": "5/abr/2023"
+    }
+  ]
+}

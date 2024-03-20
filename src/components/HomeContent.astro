@@ -1,7 +1,9 @@
 ---
+import Table from './Table.astro'
+import home from '../data/home.json'
 ---
-<section class='bg-white rounded-lg w-full py-7 px-12'>
-  <header class='flex flex-wrap justify-between items-center text-[0.7rem]'>
+<main class='bg-white rounded-lg w-full py-7'>
+  <header class='flex flex-wrap justify-between items-center text-[0.7rem] px-12'>
     <ul class='flex gap-3'>
       <li class='me-2'>
         <a
@@ -41,16 +43,26 @@
       </button>
     </div>
     <form class='w-full mt-6'>
-      <div class="relative">
-        <div class="absolute z-[1] h-full grid place-items-center">
+      <div class='relative'>
+        <div class='absolute z-[1] h-full grid place-items-center'>
           <i class='ti ti-search text-[1.25rem] pointer-events-none border-r-[1.5px] border-gray-200 w-11 text-center py-1 text-gray-200'></i>
         </div>
         <input
-          type="text"
-          id="email-address-icon"
-          class=" border-[1.5px] border-gray-100 text-sm rounded-lg block w-full ps-14 p-2 max-w-[380px] focus:outline-none"
-          placeholder="Buscar video">
+          type='text'
+          id='email-address-icon'
+          class=' border-[1.5px] border-gray-100 text-sm rounded-lg block w-full ps-14 p-2 max-w-[380px] focus:outline-none'
+          placeholder='Buscar video'>
       </div>
     </form>
   </header>
-</section>
+  <article class ='mt-8 px-12'>
+    <div class='relative overflow-x-auto'>
+      <Table
+        headings={home.head}
+        content={home.rows}
+        icon={home.icon}
+        url={home.url}
+      />
+    </div>
+  </article>
+</main>

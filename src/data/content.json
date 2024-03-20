@@ -1,0 +1,94 @@
+{
+  "icon": "circle-chevron-right",
+  "url": "",
+  "head":[
+    {
+      "id": "1",
+      "title": "Nombre"
+    },
+    {
+      "id": "2",
+      "title": "Tamaño"
+    },
+    {
+      "id": "3",
+      "title": "Duración"
+    },
+    {
+      "id": "4",
+      "title": "Última modificación"
+    }
+  ],
+  "rows": [
+    {
+      "id": "1",
+      "nombre": "Entrenamiento.mp4",
+      "tamano": "7.3GB",
+      "duracion": "04:11:37",
+      "ultima_modificacion": "30/may/2023"
+    },
+    {
+      "id": "2",
+      "nombre": "Salida-al-mercado-versión nueva.mp4",
+      "tamano": "1.4GB",
+      "duracion": "47:55",
+      "ultima_modificacion": "22/jun/2022"
+    },
+    {
+      "id": "3",
+      "nombre": "Como-cerrar-una-venta.mp4",
+      "tamano": "284MB",
+      "duracion": "10:12",
+      "ultima_modificacion": "11/sep/2021"
+    },
+    {
+      "id": "4",
+      "nombre": "Crea-un-ticket-valioso.mp4",
+      "tamano": "4.3GB",
+      "duracion": "03:50:22",
+      "ultima_modificacion": "21/jun/2023"
+    },
+    {
+      "id": "5",
+      "nombre": "Conquista-el-mercado-digital.mp4",
+      "tamano": "500MB",
+      "duracion": "5:00",
+      "ultima_modificacion": "5/abr/2023"
+    },
+    {
+      "id": "6",
+      "nombre": "Entrenamiento.mp4",
+      "tamano": "7.3GB",
+      "duracion": "04:11:37",
+      "ultima_modificacion": "30/may/2023"
+    },
+    {
+      "id": "7",
+      "nombre": "Salida-al-mercado-versión nueva.mp4",
+      "tamano": "1.4GB",
+      "duracion": "47:55",
+      "ultima_modificacion": "22/jun/2022"
+    },
+    {
+      "id": "8",
+      "nombre": "Como-cerrar-una-venta.mp4",
+      "tamano": "284MB",
+      "duracion": "10:12",
+      "ultima_modificacion": "11/sep/2021"
+    },
+    {
+      "id": "9",
+      "nombre": "Crea-un-ticket-valioso.mp4",
+      "tamano": "4.3GB",
+      "duracion": "03:50:22",
+      "ultima_modificacion": "21/jun/2023"
+    },
+    {
+      "id": "10",
+      "nombre": "Conquista-el-mercado-digital.mp4",
+      "tamano": "500MB",
+      "duracion": "5:00",
+      "ultima_modificacion": "5/abr/2023"
+    }
+  ]
+}
