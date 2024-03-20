@@ -7,7 +7,8 @@ export default {
         'primary': 'var(--primary-brand)',
         'secondary': 'var(--secondary-brand)',
         gray: {
-          100: 'var(--light-gray)'
+          100: 'var(--light-gray)',
+          200: 'var(--gray)'
         }
       }
     }

@@ -1,0 +1,56 @@
+---
+---
+<section class='bg-white rounded-lg w-full py-7 px-12'>
+  <header class='flex flex-wrap justify-between items-center text-[0.7rem]'>
+    <ul class='flex gap-3'>
+      <li class='me-2'>
+        <a
+          href='#'
+          class='flex items-center border-b-2 border-primary text-primary gap-2'
+        >
+          <i class='ti ti-books text-[1.25rem]'></i>
+          <p class='font-medium'>
+            Biblioteca
+          </p>
+        </a>
+      </li>
+      <li class='me-2'>
+        <a
+          href='#'
+          class='flex items-center border-b-2 border-transparent gap-2'
+        >
+          <i class='ti ti-trash text-[1.25rem]'></i>
+          <p class='font-medium'>
+            Papelera
+          </p>
+        </a>
+      </li>
+    </ul>
+    <div class='flex gap-3'>
+      <button class='bg-gray-100 flex justify-center items-center gap-2 p-2 rounded hover:bg-primary hover:text-white min-w-[135px]'>
+        <i class='ti ti-folder text-[1.25rem]'></i>
+        <p>
+          Nueva carpeta
+        </p>
+      </button>
+      <button class='bg-gray-100 flex justify-center items-center gap-2 p-2 rounded hover:bg-primary hover:text-white min-w-[135px]'>
+        <i class='ti ti-circle-chevron-right text-[1.25rem]'></i>
+        <p>
+          Nuevo video
+        </p>
+      </button>
+    </div>
+    <form class='w-full mt-6'>
+      <div class="relative">
+        <div class="absolute z-[1] h-full grid place-items-center">
+          <i class='ti ti-search text-[1.25rem] pointer-events-none border-r-[1.5px] border-gray-200 w-11 text-center py-1 text-gray-200'></i>
+        </div>
+        <input
+          type="text"
+          id="email-address-icon"
+          class=" border-[1.5px] border-gray-100 text-sm rounded-lg block w-full ps-14 p-2 max-w-[380px] focus:outline-none"
+          placeholder="Buscar video">
+      </div>
+    </form>
+  </header>
+</section>
