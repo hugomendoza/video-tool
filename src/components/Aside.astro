@@ -1,0 +1,19 @@
+---
+import { Image } from 'astro:assets'
+import Links from './Links.astro'
+import Plan from './Plan.astro'
+import videoToolLogo from '../img/logo-video-tool.svg'
+---
+
+<aside class='bg-white flex flex-col p-4 rounded-lg w-[18%]'>
+  <figure class='my-4'>
+    <Image
+      src={videoToolLogo}
+      alt='Logo Video Tool'
+      loading='lazy'
+      class='w-10 block mx-auto'
+    />
+  </figure>
+  <Links />
+  <Plan />
+</aside>
