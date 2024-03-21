@@ -1,6 +1,7 @@
 ---
 import '../css/global.css';
 import Aside from '../components/Aside.astro';
+import { ViewTransitions } from 'astro:transitions';
 ---
 <!doctype html>
 <html lang="en">
@@ -15,6 +16,7 @@ import Aside from '../components/Aside.astro';
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="generator" content={Astro.generator} />
     <title>Video Tool</title>
+    <ViewTransitions />
   </head>
   <body>
     <div class='flex min-h-dvh p-4 gap-4'>

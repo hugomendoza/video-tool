@@ -9,7 +9,7 @@ type rows = {
   nombre: string
   videos?: number
   duracion?: string
-  tamano?: string
+  tamano: string
   ultima_modificacion?: string
 }
 
@@ -28,8 +28,8 @@ const { headings, content, icon, url } = Astro.props
     <tr class='border-b-[1.5px] border-gray-100 [&>*:nth-child(2)]:text-left [&>*:nth-child(2)]:w-3/5'>
       <th scope='col' class='px-1 py-2'>
         <input
-        type='checkbox'
-        class='input-checkbox'
+          type='checkbox'
+          class='input-checkbox'
         />
       </th>
       {headings.map((data) => <th scope='col' class='px-3 py-2 text-center'>{data.title}</th>)}
@@ -38,7 +38,7 @@ const { headings, content, icon, url } = Astro.props
   <tbody>
     {content.map((data) =>
       <tr class='bg-white border-b-[1.5px] border-gray-100 hover:bg-gray-100 cursor-pointer'>
-        <td class='px-1 py-3'>
+        <td class='px-2 py-3'>
           <input
             type='checkbox'
             class='input-checkbox'

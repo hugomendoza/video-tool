@@ -2,20 +2,30 @@
 import Table from './Table.astro'
 import content from '../data/content.json'
 ---
-<main class='bg-white rounded-lg w-full py-7'>
-  <header class='flex flex-wrap justify-between items-center text-[0.7rem] px-6'>
-    <ul >
+<main
+  class='bg-white rounded-lg w-full py-7'
+  transition:name='initial'
+>
+  <header
+    class='flex flex-wrap justify-between items-center text-[0.7rem] px-8'
+  >
+    <ul class='flex items-center text-sm space-x-1'>
       <li>
-        <a href="">
-          <i class="ti ti-layout-dashboard text-[1.25rem]"></i>
-          <p>Dashboard</p>
+        <a
+          href='/'
+          class='w-8 h-8 grid place-items-center rounded bg-primary mr-3'
+        >
+          <i class='ti ti-arrow-left text-xl text-white'></i>
         </a>
       </li>
       <li>
-        <p>/</p>
+        <p>Home</p>
       </li>
       <li>
-        <p>Bemaster</p>
+        /
+      </li>
+      <li>
+        <p class='font-semibold'>Bemaster</p>
       </li>
     </ul>
   </header>
@@ -25,7 +35,6 @@ import content from '../data/content.json'
         headings={content.head}
         content={content.rows}
         icon={content.icon}
-        url={content.url}
       />
     </div>
   </article>
